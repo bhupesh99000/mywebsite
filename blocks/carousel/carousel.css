@@ -12,8 +12,10 @@
   
   .slider {
     width: 100%;
-    max-width: 960px;
-    height: 450px;
+    /* max-width: 960px; */
+    /* height: 450px; */
+    max-width: 105pc;
+    height: 40pc;
     position: relative;
     overflow: hidden; 
     border-radius: 15px;
@@ -22,10 +24,30 @@
   
   .slide {
     width: 100%;
-    max-width: 960px;
-    height: 350px;
+    /* max-width: 960px; */
+    /* height: 350px; */
+    height: 40pc;
     position: absolute;
     transition: all 0.5s;
+  }
+
+  .slide .slide-img-wrap {
+    height: 100%;
+  }
+
+  .slide > .slide-img-wrap > picture {
+    /* display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center; */
+    height: 100%;
+  }
+
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 
   div.slide-text{

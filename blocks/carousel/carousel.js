@@ -1,4 +1,5 @@
 export default function decorate(block) {
+  debugger;
   const rows = [...block.children];
   [...block.children].forEach((row, r) => {
     if (r == 0) {
@@ -18,17 +19,16 @@ export default function decorate(block) {
     } else {
       row.classList.add('slide');
       [...row.children].forEach((col, c) => {
-        console.log("====> ", row, r, col, c);
+        console.log('====> ', row, r, col, c);
+        col.classList.add('slide-img-wrap');
         if (c == 1) {
           col.classList.add('slide-text');
         }
-
       });
     }
   });
 
-
-  const slides = document.querySelectorAll(".slide");
+  const slides = document.querySelectorAll('.slide');
 
   // loop through slides and set each slides translateX
   slides.forEach((slide, indx) => {
@@ -36,20 +36,20 @@ export default function decorate(block) {
   });
 
   // select next slide button
-  const nextSlide = document.querySelector(".btn-next");
+  const nextSlide = document.querySelector('.btn-next');
 
   // current slide counter
   let curSlide = 0;
   // maximum number of slides
-  let maxSlide = slides.length - 1;
+  const maxSlide = slides.length - 1;
 
   // add event listener and navigation functionality
-  nextSlide.addEventListener("click", function () {
+  nextSlide.addEventListener('click', () => {
     // check if current slide is the last and reset current slide
     if (curSlide === maxSlide) {
       curSlide = 0;
     } else {
-      curSlide++;
+      curSlide += 1;
     }
 
     //   move slide by -100%
@@ -59,15 +59,15 @@ export default function decorate(block) {
   });
 
   // select next slide button
-  const prevSlide = document.querySelector(".btn-prev");
+  const prevSlide = document.querySelector('.btn-prev');
 
   // add event listener and navigation functionality
-  prevSlide.addEventListener("click", function () {
+  prevSlide.addEventListener('click', () => {
     // check if current slide is the first and reset current slide to last
     if (curSlide === 0) {
       curSlide = maxSlide;
     } else {
-      curSlide--;
+      curSlide -= 1;
     }
 
     //   move slide by 100%
@@ -75,6 +75,4 @@ export default function decorate(block) {
       slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
     });
   });
-
-
 }
