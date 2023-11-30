@@ -18,6 +18,8 @@
   --overlay-background-color: #eee;
   --highlight-background-color: #ccc;
   --text-color: #000;
+  --footer-bg-color: #202020;
+  --footer-content-color: #fff;
 
   /* fonts */
   --body-font-family: roboto, roboto-fallback;
@@ -40,6 +42,28 @@
   /* nav height */
   --nav-height: 64px;
 
+  /* fonts */
+--heading-font-family: Asar, Georgia, "Times New Roman", Times, serif;
+--body-font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+--fixed-font-family: "Roboto Mono", menlo, consolas, "Liberation Mono", monospace;
+
+/* colors */
+--text-color: #202020;
+--link-color: #0045ff;
+--link-hover-color: #0045ff;
+--background-color: #ffffff;
+--overlay-background-color: #eeeeee;
+--highlight-background-color: #cccccc;
+
+
+
+/* sizes */
+
+
+--body-font-size-m: 18px;
+--body-font-size-s: 12px;
+
+
 }
 
 @font-face {
@@ -52,12 +76,12 @@
 
 @media (min-width: 900px) {
   :root {
-    --heading-font-size-xxl: 60px;
-    --heading-font-size-xl: 48px;
-    --heading-font-size-l: 36px;
-    --heading-font-size-m: 30px;
-    --heading-font-size-s: 24px;
-    --heading-font-size-xs: 22px;
+    --heading-font-size-xxl: 40px;
+    --heading-font-size-xl: 36px;
+    --heading-font-size-l: 24px;
+    --heading-font-size-m: 16px;
+    --heading-font-size-s: 14px;
+    --heading-font-size-xs: 10px;
   }
 }
 
@@ -241,6 +265,7 @@ main .section {
 @media (min-width: 900px) {
   .section > div {
     /* max-width: 1200px; */
+    max-width: 105pc;
     margin: auto;
   }
 }
@@ -248,4 +273,8 @@ main .section {
 /* section metadata */
 main .section.highlight {
   background-color: var(--highlight-background-color);
+}
+
+[class*="-container"] {
+  margin-bottom: 1rem;
 }

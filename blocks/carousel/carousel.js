@@ -1,5 +1,4 @@
 export default function decorate(block) {
-  debugger;
   const rows = [...block.children];
   [...block.children].forEach((row, r) => {
     if (r == 0) {
@@ -20,9 +19,10 @@ export default function decorate(block) {
       row.classList.add('slide');
       [...row.children].forEach((col, c) => {
         console.log('====> ', row, r, col, c);
-        col.classList.add('slide-img-wrap');
         if (c == 1) {
           col.classList.add('slide-text');
+        } else {
+          col.classList.add('slide-img-wrap');
         }
       });
     }
