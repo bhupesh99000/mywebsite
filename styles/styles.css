@@ -262,7 +262,7 @@ main .section.highlight {
   justify-content: center;
 }
 
-.social-icons-parent > p {
+.social-icons-parent > * {
   width: 40px;
   height: 40px;
   background-color: #202020;
@@ -271,6 +271,6 @@ main .section.highlight {
   justify-content: center;
 }
 
-.social-icons-parent > p img {
+.social-icons-parent > * img {
   filter: invert(1);
 }
