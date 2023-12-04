@@ -19,6 +19,7 @@ footer .footer-links {
   justify-content: space-between;
   flex-direction: column;
 }
+
 footer .footer-links-left, footer .footer-links-right {
   display: flex;
   justify-content: space-between;
