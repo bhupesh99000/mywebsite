@@ -20,7 +20,6 @@ export default function decorate(block, mode) {
     if (mode) {
       block.classList.add('social-icons-parent');
     } else {
-      debugger;
       const parentEl = block.querySelector(':scope > div > div');
       parentEl.classList.add('social-icons-parent');
       [...parentEl.children].forEach((element) => {

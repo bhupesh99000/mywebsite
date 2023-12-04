@@ -22,10 +22,10 @@ export default async function decorate(block) {
     // [...footer.children[0].children].forEach((element, index) => {
     //   console.log(element);
     // });
-    [...footer.children[0].children].reduce(((prevItem, curItem, index, array) => {
-      console.log(prevItem, curItem, index, array);
+    // [...footer.children[0].children].reduce(((prevItem, curItem, index, array) => {
+    //   // console.log(prevItem, curItem, index, array);
 
-    }), []);
+    // }), []);
 
     decorateIcons(footer);
     block.append(footer);
