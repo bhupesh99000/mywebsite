@@ -29,3 +29,14 @@
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
+
+.cards-container::after {
+  content: ' ';
+  width: 100%;
+  display: block;
+  height: 1px;
+  background-color: #ebebeb;
+  max-width: 105pc;
+  position: relative;
+  margin: 4rem auto;
+}

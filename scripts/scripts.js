@@ -74,7 +74,6 @@ export function decorateMain(main) {
  * @param {Element} doc The container element
  */
 async function loadEager(doc) {
-  debugger;
   document.documentElement.lang = 'en';
   decorateTemplateAndTheme();
   const main = doc.querySelector('main');
@@ -99,7 +98,6 @@ async function loadEager(doc) {
  * @param {Element} doc The container element
  */
 async function loadLazy(doc) {
-  debugger;
   const main = doc.querySelector('main');
   await loadBlocks(main);
 
@@ -129,11 +127,8 @@ function loadDelayed() {
 }
 
 async function loadPage() {
-  console.log('loading eager');
   await loadEager(document);
-  console.log('loading lazy');
   await loadLazy(document);
-  console.log('loading delayed');
   loadDelayed();
 }
 
