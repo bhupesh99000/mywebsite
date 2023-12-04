@@ -230,25 +230,18 @@ main img {
   width: 100%;
 }
 
-main .section {
-  /* padding: 64px 16px; */
-  /* padding: 0 1rem; */
-}
-
 main .section > div {
   padding: 0 1rem;
 }
 
 @media (min-width: 600px) {
   main .section > div{
-    /* padding: 64px 32px; */
     padding: 0 2rem;
   }
 }
 
 @media (min-width: 900px) {
   .section > div {
-    /* max-width: 1200px; */
     max-width: 105pc;
     margin: 0 auto;
   }

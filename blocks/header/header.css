@@ -14,6 +14,7 @@ header nav {
   align-items: center;
   gap: 0 2em;
   margin: auto;
+
   /* max-width: 1264px; */
   height: var(--nav-height);
   padding: 0 1rem;
@@ -225,6 +226,7 @@ header nav .nav-sections ul > li > ul > li {
 
   header nav .nav-sections ul {
     display: flex;
+    
     /* gap: 2em; */
     margin: 0;
     font-size: var(--body-font-size-xs);
