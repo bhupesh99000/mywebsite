@@ -30,7 +30,7 @@
   object-fit: cover;
 }
 
-.cards-container:after {
+.cards-container::after {
   content: ' ';
   width: 100%;
   display: block;

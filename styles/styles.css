@@ -12,12 +12,12 @@
 
  :root {
   /* colors */
-  --link-color: #035fe6;
-  --link-hover-color: #136ff6;
-  --background-color: #fff;
-  --overlay-background-color: #eee;
-  --highlight-background-color: #ccc;
-  --text-color: #000;
+  /* --link-color: #035fe6;
+  --link-hover-color: #136ff6; */
+  /* --background-color: #fff; */
+  /* --overlay-background-color: #eee;
+  --highlight-background-color: #ccc; */
+  /* --text-color: #000; */
   --footer-bg-color: #202020;
   --footer-content-color: #fff;
 
@@ -43,9 +43,9 @@
   --nav-height: 64px;
 
   /* fonts */
---heading-font-family: Asar, Georgia, "Times New Roman", Times, serif;
+/* --heading-font-family: Asar, Georgia, "Times New Roman", Times, serif;
 --body-font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
---fixed-font-family: "Roboto Mono", menlo, consolas, "Liberation Mono", monospace;
+--fixed-font-family: "Roboto Mono", menlo, consolas, "Liberation Mono", monospace; */
 
 /* colors */
 --text-color: #202020;

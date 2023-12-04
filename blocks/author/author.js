@@ -8,8 +8,8 @@ export default function decorate(block) {
       const authorImgElm = element.children[0];
       const authorInfoElm = element.children[1];
 
-      authorImgElm.classList.add('author-list-item__img-wrap');
-      authorInfoElm.classList.add('author-list-item__info-wrap');
+      authorImgElm.classList.add('author-list-item-img-wrap');
+      authorInfoElm.classList.add('author-list-item-info-wrap');
 
       const socialIcons = authorInfoElm.querySelectorAll(':scope >p');
       const socialIconsWrapper = document.createElement('div');

@@ -15,9 +15,7 @@
   }
   
   .slider {
-    width: 100%;
-    /* max-width: 960px; */
-    /* height: 450px; */
+    width: 100%; /* max-width: 960px; */ /* height: 450px; */
     height: 40pc;
     position: relative;
     overflow: hidden; 
@@ -26,9 +24,7 @@
   }
   
   .slide {
-    width: 100%;
-    /* max-width: 960px; */
-    /* height: 350px; */
+    width: 100%; /* max-width: 960px; */ /* height: 350px; */
     height: 40pc;
     position: absolute;
     transition: all 0.5s;
@@ -74,9 +70,11 @@
     font-size: 18px;
     color: black;
   }
+
   .btn:active {
     *transform: scale(1.1);
   }
+  
   .btn-prev {
     top: 45%;
     left: 2%;

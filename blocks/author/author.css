@@ -12,15 +12,14 @@
 }
 
 
-.author .author-list-item .author-list-item__img-wrap img {
+.author .author-list-item .author-list-item-img-wrap img {
     border-radius: 50%;
     height: 164px;
-    -o-object-fit: cover;
     object-fit: cover;
     width: 164px;
 }
 
-.author .author-list-item .author-list-item__info-wrap {
+.author .author-list-item .author-list-item-info-wrap {
     display: flex;
     justify-content: center;
     flex-direction: column;
