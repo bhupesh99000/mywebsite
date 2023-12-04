@@ -32,7 +32,7 @@
   --heading-font-size-xs: 18px;
 
   /* nav height */
-  --nav-height: 64px;
+  --nav-height: 80px;
 
   /* colors */
 --text-color: #202020;
@@ -70,6 +70,7 @@ body {
   color: var(--text-color);
   background-color: var(--background-color);
   display: none;
+  box-sizing: border-box;
 }
 
 body.appear {
@@ -229,21 +230,20 @@ main img {
   width: 100%;
 }
 
-main .section {
-  /* padding: 64px 16px; */
+main .section > div {
+  padding: 0 1rem;
 }
 
 @media (min-width: 600px) {
-  main .section {
-    /* padding: 64px 32px; */
+  main .section > div{
+    padding: 0 2rem;
   }
 }
 
 @media (min-width: 900px) {
   .section > div {
-    /* max-width: 1200px; */
     max-width: 105pc;
-    margin: auto;
+    margin: 0 auto;
   }
 }
 
