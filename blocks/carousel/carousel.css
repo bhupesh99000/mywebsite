@@ -9,12 +9,15 @@
     display: grid;
     place-items: center;
   }
+
+  .carousel-container {
+    margin-bottom: 4rem;
+  }
   
   .slider {
     width: 100%;
     /* max-width: 960px; */
     /* height: 450px; */
-    max-width: 105pc;
     height: 40pc;
     position: relative;
     overflow: hidden; 

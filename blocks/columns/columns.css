@@ -31,3 +31,8 @@
     order: unset;
   }
 }
+
+.content-wrapper {
+  background: #ebebeb;
+  padding: 1rem;
+}
