@@ -41,16 +41,6 @@
 --background-color: #fff;
 --overlay-background-color: #eee;
 --highlight-background-color: #ccc;
-
-
-
-/* sizes */
-
-
---body-font-size-m: 18px;
---body-font-size-s: 12px;
-
-
 }
 
 @font-face {
