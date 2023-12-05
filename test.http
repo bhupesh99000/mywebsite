@@ -1,0 +1,12 @@
+# POST /form/bhupesh99000/mywebsite/magazine-articles/en/email-form.json HTTP/1.1
+POST https://magazine-articles--mywebsite--bhupesh99000.hlx.page/email-form.json HTTP/2.0
+content-type: application/json
+
+{
+  "data": {
+    "name":"test",
+    "email": "test@123.com",
+    "interests": "something"
+  }
+}
+
